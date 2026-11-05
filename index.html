@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+    <meta name="description" content="A simple Mailto Link Generator">
+    <meta name="author" content="Matthieu Solente">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="email, generator, html, css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Thumbnail Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Thumbnail Generator</h1>
+    </header>
+    <main class="wrapper">
+       <article>
+        <section>
+
+
+<div class="form-group">
+    <label>Image</label>
+    <input type="file" id="imageInput" accept="image/*">
+</div>
+
+<div class="form-group">
+    <label for="playColor">
+        Play buton color
+    </label>
+
+    <input
+        type="color"
+        id="playColor"
+        value="#FFFFFF"
+    >
+
+    <input
+        type="text"
+        id="playColorHex"
+        value="#FFFFFF"
+        placeholder="#FFFFFF"
+    >
+</div>
+
+<div class="form-group">
+    <label for="playSize">
+        Play buton size
+    </label>
+
+    <input
+        type="range"
+        id="playSize"
+        min="10"
+        max="40"
+        value="20"
+    >
+
+    <span id="playSizeValue">20%</span>
+</div>
+
+<div class="form-group">
+    <label>
+        <input
+            type="checkbox"
+            id="showCircle"
+        >
+        Draw a circle around Play icon
+    </label>
+</div>
+
+<button id="generateBtn">
+    Generate
+</button>
+
+<canvas id="canvas"></canvas>
+
+<div id="downloadArea">
+    <button id="downloadBtn">
+        Download
+    </button>
+</div>
+</section></article>
+    </main>
+<footer>
+      <p>© Matthieu Solente <span id="year"></span> View on Github <a href="https://github.com/matthieuSolente/thumbnail-generator"><img src="https://github.com/matthieuSolente/rename-your-file/blob/main/img/github-mark-white.png?raw=true" alt="my github page" style="width:20px"></a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
