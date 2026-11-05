@@ -1,15 +1,7 @@
 const MAX_WIDTH = 1360;
-
 const DEFAULT_PLAY_SIZE_PERCENT = 20;
 const MIN_PLAY_SIZE_PERCENT = 10;
 const MAX_PLAY_SIZE_PERCENT = 40;
-/*
-==================================================
-COLLER ICI TES BASE64
-==================================================
-*/
-
-
 /*
 ==================================================
 ELEMENTS
@@ -71,13 +63,13 @@ function loadImage(src){
 GENERATION
 ==================================================
 */
-playColor.addEventListener(
-    "input",
-    () => {
-        playColorHex.value =
-            playColor.value.toUpperCase();
-    }
-);
+playColor.addEventListener("input", () => {
+    playColorHex.value = playColor.value.toUpperCase();
+});
+
+playColor.addEventListener("change", () => {
+    playColorHex.value = playColor.value.toUpperCase();
+});
 
 playColorHex.addEventListener(
     "input",
